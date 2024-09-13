@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+
+  /*outline: 1px solid red;  Evidenzia tutti gli elementi per capire chi potrebbe causare overflow */
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 970;
+  background-color: #ffc017;
+  padding: 10px;
+  border-bottom: solid 1px;
+  transition: background-color 0.7s ease;
+}
+.cheangeColorHeader {
+  background-color: white;
+  transition: background-color 0.7s ease;
+}
+.cheangeColorButton {
+  background-color: #1a8917;
+  transition: background-color 0.7s ease;
+}
+header div {
+  justify-content: space-around;
+  display: flex;
+}
+header div img {
+  width: 15rem;
+}
+
+header div nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header div nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+header div nav ul li {
+  font-size: 20px;
+  list-style-type: none;
+}
+
+header div nav button {
+  padding: 14px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+}
+.hero {
+  background-color: #ffc017;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px;
+}
+.hero div {
+  align-items: start;
+  flex-direction: column;
+  display: flex;
+  margin-left: 8.4rem;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 4rem;
+  font-family: "Spectral", sans-serif;
+}
+.hero div p {
+  margin-top: 25px;
+  font-size: 20px;
+  font-family: spectral;
+}
+
+.hero div button {
+  padding-inline: 22px;
+  padding-block: 6px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+
+  margin-top: 30px;
+}
+
+.hero img {
+  width: 25rem;
+}
+.paragrafoSection {
+  font-weight: 500;
+  margin-left: 6.6rem;
+  top: 4rem;
+  position: relative;
+}
+.paragrafoSection img {
+  right: 6px;
+  position: relative;
+  top: 8px;
+}
+.section {
+  border-bottom: solid 1px #e6e7e6;
+  padding: 5rem;
+}
+
+.containerCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.card {
+  width: 30%;
+  display: flex;
+  margin-inline: 1rem;
+}
+
+.numero > span {
+  display: inline-block;
+  font-size: 2rem;
+  margin-right: 1rem;
+  font-weight: 800;
+  color: #e6e7e6;
+}
+
+.contenuto {
+  line-height: 2rem;
+}
+
+.contenuto > p {
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+#borderRadiusImg {
+  border-radius: 50%;
+}
+
+.contenuto > p > img {
+  border-radius: 25%;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  width: 25px;
+}
+
+.contenuto > h5 {
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: normal;
+}
+.paragrafoStar {
+  color: gray;
+  font-size: 0.8rem;
+}
+.paragrafoStar > img {
+  margin-bottom: 2px;
+  margin-left: 2px;
+  width: 20px;
+}
+
+aside {
+  padding: 5rem;
+  display: flex;
+}
+.containerArticoli {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 69%;
+}
+.cardArticolo {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  gap: 10px;
+}
+.imgSpan {
+  margin-bottom: 5px;
+}
+
+.imgSpan > span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  bottom: 8px;
+  position: relative;
+}
+.imgSpan > img {
+  width: 25px;
+  border-radius: 50%;
+}
+.articolo {
+  width: 100%;
+}
+.articolo > h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.articolo > h4 {
+  margin-bottom: 8px;
+  color: gray;
+}
+.fondoArticolo {
+  display: flex;
+  justify-content: space-between;
+}
+.fondoArticolo > h5 {
+  font-size: 14px;
+  color: gray;
+}
+.fondoArticolo span {
+  margin-left: 5px;
+  padding-inline: 9px;
+  border-radius: 30px;
+  background-color: #d3d3d361;
+  padding-bottom: 4px;
+}
+
+.fondoArticolo > h5 > img {
+  position: relative;
+  top: 7px;
+}
+
+.imgArticolo {
+  width: 10rem;
+}
+.containerDiscover {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+.containerDiscover h2 {
+  font-weight: 600;
+  font-size: 13px;
+}
+.containerTextDiscover {
+  margin-top: 15px;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.containerTextDiscover div {
+  color: gray;
+  border-radius: 3px;
+  border: solid 1px gray;
+  padding: 6px;
+}
+.bordo {
+  margin-block: 20px;
+  border: solid 1px #80808085;
+}
+
+.containerLink {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.containerLink a {
+  text-decoration: none;
+  color: gray;
+}
