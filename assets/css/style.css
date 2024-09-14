@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 header {
   position: sticky;
   top: 0;
@@ -64,7 +65,7 @@ header div nav button {
   justify-content: space-between;
   border-bottom: solid 1px;
 }
-.hero div {
+.heroText {
   align-items: start;
   flex-direction: column;
   display: flex;
@@ -94,9 +95,6 @@ h1 {
   margin-top: 30px;
 }
 
-.hero img {
-  width: 25rem;
-}
 .paragrafoSection {
   font-weight: 500;
   margin-left: 6.6rem;
@@ -271,4 +269,72 @@ aside {
 .containerLink a {
   text-decoration: none;
   color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  header div img {
+    width: 12rem;
+  }
+  .hero {
+    overflow: hidden;
+  }
+  .heroText {
+    margin-left: initial;
+    margin-left: 2.4rem;
+    justify-content: center;
+  }
+  h1 {
+    margin-top: initial;
+  }
+  .m {
+    width: 48%;
+    overflow: hidden;
+    height: 350px;
+  }
+  .hero svg {
+    width: 0;
+    height: 0;
+  }
+
+  .paragrafoSection {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 5.5rem;
+    top: 0.7rem;
+    position: relative;
+  }
+  .section {
+    padding: initial;
+    padding-block: 1rem;
+  }
+  .containerCard {
+    justify-content: center;
+  }
+  .card {
+    width: 38%;
+  }
+  .paragrafoStar img {
+    opacity: 0;
+  }
+  aside {
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: initial;
+    padding: 2rem;
+    display: flex;
+  }
+  .containerDiscover {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerLink {
+    margin-block: 20px;
+  }
+  .containerArticoli {
+    width: 100%;
+  }
+  .cardArticolo {
+    width: 100%;
+  }
 }
