@@ -95,12 +95,6 @@ h1 {
   margin-top: 30px;
 }
 
-.paragrafoSection {
-  font-weight: 500;
-  margin-left: 6.6rem;
-  top: 4rem;
-  position: relative;
-}
 .paragrafoSection img {
   right: 6px;
   position: relative;
@@ -108,7 +102,6 @@ h1 {
 }
 .section {
   border-bottom: solid 1px #e6e7e6;
-  padding: 5rem;
 }
 
 .containerCard {
@@ -166,16 +159,6 @@ h1 {
   width: 20px;
 }
 
-aside {
-  padding: 5rem;
-  display: flex;
-}
-.containerArticoli {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 69%;
-}
 .cardArticolo {
   display: flex;
   justify-content: space-between;
@@ -232,11 +215,7 @@ aside {
 .imgArticolo {
   width: 10rem;
 }
-.containerDiscover {
-  width: 32%;
-  display: flex;
-  flex-direction: column;
-}
+
 .containerDiscover h2 {
   font-weight: 600;
   font-size: 13px;
@@ -257,7 +236,7 @@ aside {
 }
 .bordo {
   margin-block: 20px;
-  border: solid 1px #80808085;
+  border: solid 1px #e6e7e6;
 }
 
 .containerLink {
@@ -271,70 +250,136 @@ aside {
   color: gray;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   header div img {
     width: 12rem;
   }
-  .hero {
-    overflow: hidden;
-  }
+
   .heroText {
     margin-left: initial;
     margin-left: 2.4rem;
     justify-content: center;
   }
+
   h1 {
     margin-top: initial;
   }
   .m {
-    width: 48%;
+    width: 300px;
+    height: 200px;
     overflow: hidden;
-    height: 350px;
-  }
-  .hero svg {
-    width: 0;
-    height: 0;
   }
 
   .paragrafoSection {
     font-size: 15px;
     font-weight: 500;
-    margin-left: 5.5rem;
+    margin-left: 4.4rem;
     top: 0.7rem;
     position: relative;
   }
+
   .section {
-    padding: initial;
     padding-block: 1rem;
   }
+
   .containerCard {
     justify-content: center;
   }
+
   .card {
-    width: 38%;
+    width: 40%;
   }
+
   .paragrafoStar img {
     opacity: 0;
   }
+
   aside {
     align-items: center;
     flex-direction: column-reverse;
-    padding: initial;
     padding: 2rem;
     display: flex;
   }
+
+  .containerArticoli {
+    flex-direction: column;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .cardArticolo {
+    width: 100%;
+  }
+
   .containerDiscover {
     width: 100%;
+  }
+}
+
+/* Media query per min-width: 1200px */
+@media screen and (min-width: 1200px) {
+  header div img {
+    width: 14rem;
+  }
+
+  .heroText {
+    margin-left: 3rem;
+  }
+  .m {
+    width: initial;
+    height: initial;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .paragrafoSection {
+    font-size: 16px;
+
+    font-weight: 500;
+    margin-left: 6.6rem;
+    top: 4rem;
+    position: relative;
+    font-size: 16px;
+  }
+  .section {
+    padding-block: initial;
+    padding: 5rem;
+  }
+
+  .card {
+    width: 30%;
+  }
+  .paragrafoStar img {
+    opacity: 1;
+  }
+
+  .containerDiscover {
+    width: 32%;
     display: flex;
     flex-direction: column;
   }
-  .containerLink {
-    margin-block: 20px;
+
+  .cardArticolo {
+    width: 80%;
+  }
+
+  .imgArticolo {
+    width: 12rem;
+  }
+  aside {
+    padding: 5rem;
+    display: flex;
+    flex-direction: initial;
+    align-items: initial;
   }
   .containerArticoli {
-    width: 100%;
-  }
-  .cardArticolo {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 69%;
   }
 }
